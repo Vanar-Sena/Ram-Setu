@@ -58,7 +58,7 @@ img {
     display: flex;
     z-index: 2;
 
-    background: url(/assests/bg.gif);
+    background: url(./assests/bg.gif);
     background-repeat:  no-repeat;
     background-size: cover;
     background-position: right;
