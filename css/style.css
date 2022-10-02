@@ -58,7 +58,7 @@ img {
     display: flex;
     z-index: 2;
 
-    background: url(./assests/bg.gif);
+    background: url(../assests/bg.gif);
     background-repeat:  no-repeat;
     background-size: cover;
     background-position: right;
@@ -114,7 +114,7 @@ img {
     height: 29%;
     position: absolute;
     top: -30%;
-    background-image: url(/assests/big-rock.png);
+    background-image: url(../assests/big-rock.png);
     outline: none;
     cursor: pointer;
 }
@@ -234,7 +234,7 @@ img {
         height: 35%;
         position: absolute;
         top: -30%;
-        background-image: url(/assests/big-rock.png);
+        background-image: url(../assests/big-rock.png);
         outline: none;
         cursor: pointer;
     }
