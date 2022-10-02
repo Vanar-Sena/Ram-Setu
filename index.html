@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Ram Setu</title>
+</head>
+
+<body>
+    
+    <div class="start">
+        <button><img src="./assests/start-btn.png" alt=""></button>
+    </div>
+    
+    <div id="game" style="display: none">
+        <div id="box">
+            <div id="game-container">
+                <div class="line" id="line1"></div>
+                <div class="line" id="line2"></div>
+                <div class="line" id="line3"></div>
+                <div class="line" id="line4"></div>
+            </div>
+            <div class="tiles" id="tiles"></div>
+            <div class="score">
+                <p>पत्थर संग्रह : </p>
+                <p id="score"> 0</p>
+            </div>
+        </div>
+    </div>
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">आपका खेल संपूर्ण !</div>
+        <div class="score_text">अपने 0 पत्थर संगृहीत कीए |</div>
+        <div class="buttons">
+            <button class="restart"><img src="./assests/replay-btn.png" alt=""></button>
+        </div>
+    </div>
+    <!-- <audio id="audio" src="https://drive.google.com/uc?id=1vCDIoUu4NIjBlMOee-wTDsHBMc1bxzES" hidden> -->
+            <audio id="play" src="/music/bgMusic.mp3" hidden>
+            <audio id="start" src="./music/start.mp3"></audio>
+                
+            <audio id="out" src="./music/endBg.mp3" hidden>
+            <audio id="result" src="" hidden>
+        <script src="/Js/main.js"></script>
+</body>
+
+</html>

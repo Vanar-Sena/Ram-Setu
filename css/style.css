@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    user-select: none;
+}
+
+body{
+    background: rgb(245,255,0);
+    background: radial-gradient(circle, rgba(245,255,0,0.9391106784510679) 0%, rgba(250,125,2,0.8886905103838411) 36%, rgba(255,3,3,0.8130602582830007) 100%);
+}
+
+
+
+button,
+.result_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.3s ease;
+}
+
+
+.start button {
+    width: 250px;
+    height: 100px;
+    outline: none;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    background: transparent;
+    box-shadow: none;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+#game {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+#game #game-container,
+#game #tiles {
+    position: absolute;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    display: flex;
+    z-index: 2;
+
+    background: url(/assests/bg.gif);
+    background-repeat:  no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+
+
+#game .score {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    z-index: 5;
+    border-bottom: 2px solid black;
+    background: rgb(245,255,0);
+    background: radial-gradient(circle, rgba(245,255,0,0.9391106784510679) 0%, rgba(250,125,2,0.8886905103838411) 36%, rgba(255,3,3,0.8130602582830007) 100%);
+}
+
+#game .score p {
+    font-size: 40px;
+    font-weight: 700;
+    margin-right: 5px;
+    width: auto;
+    color: rgb(73, 69, 77);
+    z-index: 5;
+}
+
+#game .score #score {
+    margin-top: 7px;
+}
+
+#game #game-container .line {
+    width: 25%;
+    border-right: solid 1px rgb(197, 197, 197);
+}
+
+#game #game-container #line4 {
+    border-right: none;
+}
+
+#game #tiles {
+    display: block;
+    overflow: hidden;
+}
+
+#game #tiles div {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 25%;
+    height: 29%;
+    position: absolute;
+    top: -30%;
+    background-image: url(/assests/big-rock.png);
+    outline: none;
+    cursor: pointer;
+}
+
+.move {
+    transform: translateY(145vh);
+    transition: transform linear 2s;
+}
+
+.speedX1 {
+    transition: transform linear 1.5s;
+}
+
+.speedX2 {
+    transition: transform linear 1.25s;
+}
+
+.speedX3 {
+    transition: transform linear 1s;
+}
+
+.speedX4 {
+    transition: transform linear 0.75s;
+}
+
+.result_box {
+    background: #fff;
+    width: 450px;
+    height: auto;
+    padding: 35px 30px;
+    padding-top: 6px;
+    border-radius: 35px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+    background: rgb(251,215,43);
+    background: linear-gradient(90deg, rgba(251,215,43,1) 0%, rgba(249,72,74,1) 100%);
+}
+
+.result_box.activeResult {
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.result_box .complete_text {
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.result_box .score_text {
+    margin: 10px 0;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.result_box .icon {
+    font-size: 100px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.result_box .buttons {
+    position: relative;
+    display: flex;
+    margin: 20px 0;
+}
+
+.result_box .buttons button {
+    margin-top: 12px;
+    margin-bottom: 10px;
+    width: auto;
+    height: 75px;
+    border: none;
+    outline: none;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+@media (max-width: 550px) {
+    .result_box {
+        width: 80%;
+    }
+    
+    @media (max-width: 350px) {
+        .result_box .complete_text {
+            font-size: 18px;
+        }
+
+    }
+}
+
+@media (min-width: 550px) {
+    #game {
+        padding-left: 12%;
+        /* padding-right: 30%; */
+    }
+    
+}
+
+@media (min-width: 900px) {
+    #game {
+        padding-left: 28%;
+    }
+    #game #tiles div {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 25%;
+        height: 35%;
+        position: absolute;
+        top: -30%;
+        background-image: url(/assests/big-rock.png);
+        outline: none;
+        cursor: pointer;
+    }
+}
