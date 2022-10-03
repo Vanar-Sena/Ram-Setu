@@ -55,23 +55,54 @@ function appendDiv() {
 
     do {
         mar2 = randomMargin();
+        ob.classList.add(mar2.toString())
     } while (mar == mar2);
-    {
-        mar = mar2;
-    }
 
     ob.style.marginLeft = mar2 + "%";
     setTimeout(moveDown, 100, ob);
+
     ob.onclick = () => {
         ob.style.background = "rgba(0,0,0,0)";
         updateScore();
     };
+
     if (score >= 70 && score < 150) step = 1;
     else if (score >= 150 && score < 400) step = 2;
     else if (score >= 400 && score < 800) step = 3;
     else if (score >= 800) step = 4;
     document.getElementById("tiles").prepend(ob);
 }
+
+
+window.addEventListener("keydown", e =>{
+    if(e.key == 'a'){
+        let a = document.getElementsByClassName((0).toString())
+        a = a[a.length - 1]
+        a.style.background = "rgba(0,0,0,0)";
+        updateScore();
+    } 
+    if(e.key == 's'){
+        let s = document.getElementsByClassName((25).toString())
+        s = s[s.length - 1]
+        s.style.background = "rgba(0,0,0,0)";
+        updateScore();
+        
+    }
+    if(e.key == 'd'){
+        let d = document.getElementsByClassName((50).toString())
+        d = d[d.length - 1]
+        d.style.background = "rgba(0,0,0,0)";
+        updateScore();
+        
+    }
+    if(e.key == 'f'){
+        let f = document.getElementsByClassName((75).toString())
+        f = f[f.length - 1]
+        f.style.background = "rgba(0,0,0,0)";
+        updateScore();
+        
+    }
+})
 
 function randomMargin() {
     return 25 * Math.floor(Math.random() * 4);
