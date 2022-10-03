@@ -38,7 +38,10 @@ How To Play
 
 
 
-https://user-images.githubusercontent.com/64952178/193564221-0048d04c-50f2-44f7-8630-ac2895d4c7cf.mp4
+
+
+![ingame](https://user-images.githubusercontent.com/64952178/193570314-b90672c0-309e-4051-b84d-c2b18487d871.gif)
+
 
 
 <br>
