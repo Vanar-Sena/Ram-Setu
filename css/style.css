@@ -38,6 +38,63 @@ button,
     background-color: rgba(255, 0, 0, 0);
 }
 
+#info{
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    background: transparent;
+    box-shadow: none;
+    background-color: rgba(255, 0, 0, 0);
+     position: absolute;
+    top: 80%;
+    left: 45%;
+    display: inline-block;
+    border-bottom: 1px solid black;
+
+}
+
+#info .tooltipText{
+    visibility: hidden;
+    background-color: rgb(225, 144, 78);
+    color: rgb(71, 17, 17);
+    text-align: center;
+    padding: 0px;
+    padding-top: 15px;
+    border-radius: 6px;
+    margin-bottom: 5px;
+   font-size: 16px;
+   font-weight: 900;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    width: 120px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px; 
+}
+
+#info:hover .tooltipText{
+    visibility: visible;
+}
+
+#ram-pathar{
+    width: 400px;
+    height: 180px;
+    outline: none;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    background: transparent;
+    box-shadow: none;
+    background-color: rgba(255, 0, 0, 0);
+     position: absolute;
+    top: 10%;
+    left: 40%;
+}
+
 #game {
     width: 100%;
     height: 100%;
@@ -63,6 +120,7 @@ img {
     background-size: cover;
     background-position: right;
 }
+
 
 
 #game .score {
@@ -205,6 +263,20 @@ img {
     .result_box {
         width: 80%;
     }
+    #ram-pathar{
+        width: 250px;
+        height: 120px;
+        outline: none;
+        border: none;
+        border-radius: 100%;
+        cursor: pointer;
+        background: transparent;
+        box-shadow: none;
+        background-color: rgba(255, 0, 0, 0);
+         position: absolute;
+        top: 10%;
+        left: 20%;
+    }
     
     @media (max-width: 350px) {
         .result_box .complete_text {
@@ -219,6 +291,8 @@ img {
         padding-left: 12%;
         /* padding-right: 30%; */
     }
+
+    
     
 }
 
@@ -236,5 +310,20 @@ img {
         background-image: url(../assests/big-rock.png);
         outline: none;
         cursor: pointer;
+    }
+
+    #info{
+        width: 50px;
+        height: 50px;
+        outline: none;
+        border: none;
+        border-radius: 100%;
+        cursor: pointer;
+        background: transparent;
+        box-shadow: none;
+        background-color: rgba(255, 0, 0, 0);
+         position: absolute;
+        top: 80%;
+        left: 48.5%;
     }
 }
